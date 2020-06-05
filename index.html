@@ -149,7 +149,7 @@
 
         function sendMessage(sender, messageText) {
             //send message log to Application Insights
-            appInsights.trackEvent("メッセージの投稿", { "メッセージ": sender,messageText });          
+            appInsights.trackEvent("sendMessage", { "userName": sender,"messageText":messageText });          
             return axios.post(`${apiBaseUrl}/api/messages`, {
                 sender: sender,
                 text: messageText
