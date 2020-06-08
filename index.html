@@ -176,7 +176,7 @@
     (function () {
     var div = document.createElement("div");
     document.getElementsByTagName('body')[0].appendChild(div);
-    div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='https://powerva.microsoft.com/webchat/bots/3ad90060-618f-4bf0-9e14-dc9e69c14f3b'></iframe></div>"; 
+    div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; right: 0; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='https://powerva.microsoft.com/webchat/bots/3ad90060-618f-4bf0-9e14-dc9e69c14f3b'></iframe></div>"; 
 
     document.querySelector('body').addEventListener('click', function (e) {
             e.target.matches = e.target.matches || e.target.msMatchesSelector;
